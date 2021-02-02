@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<Title>Rocket Recruitment</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+    </style> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+  
+
+    function myMenuDropdown() {
+document.getElementById("menuDropbtnDesktop").classList.toggle("show");
+}
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+</head>
+<body>
+
+  <div class="headerDesktop">
+  <div class="headerBlock">
+    <a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
+    
+    <div class="headerContact">contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</div>
+    <div class="headerSocial">
+    <a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
+    
+    <a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
+    
+    <a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
+  
+    </div>
+    </div>
+
+  </div>
+
+
+  <div class="headerIpad">
+<div class="headerBlock">
+<a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
+
+<div class="ipadHeaderLayout">
+<div class="headerContact">contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</div>
+<div class="headerSocial">
+<a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
+
+<a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
+
+<a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
+</div>
+</div>
+</div>
+</div>
+
+
+    <div onclick="myMenuDropdown()" class="menuDropbtnDesktop">Menu<img class="menuIcon" src="menu/menuIcon.png"></div>
+    <div class="menuDropdown-contentDesktop" id="menuDropbtnDesktop">
+      
+
+      <ul class="navList" id="navList"> 
+     
+        <a href="index.html"><li>Home</li></a>
+        <a href="candidates.html"><li>Candidates</li></a>
+        <a href="employers.html"><li>Employers</li></a>
+        <a href="currentJobs.html"><li>Current Jobs</li></a>
+
+      </ul>
+    </div>
+
+
+
+    <script>
+
+
+      $( "div.menuDropbtnDesktop" ).click(function() { var x = document.getElementById("navList");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+        $( "ul" ).slideToggle( "slow" );
+      });
+      
+</script>    
+
+
+  <div class="candidatesContainer">
+
+<img src="candidates/candidatesBackground.png" alt="view of the earth" class="candidatesBackgroundImg">
+
+
+<img src="candidates/candidatesBgrndMob.png" alt="view of the earth" class="candidatesBackgroundImgMob">
+
+<div  class="candidatesText"> 
+    <p>We want to help you launch your career to stratospheric heights and put you into the job you've always wanted. We'll listen to what're really looking for from your job and work to ensure you find the perfect job for you.</p>
+    <p class="emailLine">
+    Email us at candidates@rocketrecruitment.com
+    </p>
+  </div>
+  </div>
+
+  <div class="contactContainerEmployers">
+
+    <img alt="map" src="index/map.png" class="mapImg">
+    <div class="contactTextContainer"><div class="contactHeader">Call or email us to make an appointment...</div>
+    <p>contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</p> 
+    </div>
+</div>
+
+
+</div>
+
+
+
+<footer>
+
+&copy Copyright 2020 Rocket Recruitment</footer>
+
+
+</body>
+</html>

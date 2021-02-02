@@ -1,0 +1,571 @@
+
+body {font-family: 'Javanese Text', serif;
+background-color: black;}
+
+
+/* HEADER - DESKTOP */
+
+
+.headerBlock {width:100%;
+background-color: black;
+border-bottom:2px solid white;
+color:white;
+display:flex;
+align-items: center;
+height:140px;}
+
+.titleLink {cursor: pointer;
+  width:45%;}
+
+.rocketTitle {
+margin-left:20px;
+width:100%;
+padding-top: 5px;}
+
+.headerContact {width:35%;
+text-align: right;
+font-size: 1.3em;
+line-height: 1.5em;
+margin-right: 15px;}
+
+.headerIpad {display:none;}
+
+.headerSocial {width:20%;
+display: flex;
+justify-content: center;}
+
+.socialIcon {width:65px;
+height:65px;
+margin:10px;
+text-align: right;
+cursor:pointer;}
+
+/* FOOTER - DESKTOP */
+
+footer {border-top: 2px solid white;
+color:white;
+height: 40px;
+display: flex;
+align-items: center;}
+
+
+/* MENU - DESKTOP */
+
+
+.menuIcon {width:30px;
+  height:20px;
+margin-left:10px;}
+
+.navList {list-style-type: none;
+padding:0;
+font-size: 25px;}
+
+.navList li {height: 50px;
+padding:10px 0;}
+
+
+/* MENU DROPDOWN */
+
+ /* Dropdown Button */
+ .menuDropbtnDesktop {
+    background-color: black;
+color: white;
+text-align:right;
+border: 2px solid white;
+border-top: 0px;
+font-size: 30px;
+padding: 0 10px;
+height: 60px;
+position: absolute;
+right:8px;
+z-index:1;
+cursor:pointer;
+width:200px;
+display: flex;
+justify-content: center;
+align-items: baseline;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+  .menuDropdownDesktop {
+    position: relative;
+    display: inline-block;
+    width:147px;
+    height:22px;
+    padding: 16px 0;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .menuDropdown-contentDesktop {
+    display: none;
+    position: absolute;
+    right:8px;
+    transform:translate(0,62px);
+    background-color:rgb(199,174,243);
+    min-width: 139.53px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width:223px;
+  }
+  
+  /* Links inside the dropdown */
+  .menuDropdown-contentDesktop a {
+    color: black;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .menuDropdown-contentDesktop a:hover {background-color: #ddd;
+    }
+  
+  /* Show the dropdown menu on hover */
+  /*.filmDropdownDesktop:hover .filmDropdown-contentDesktop {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .menuDropdownDesktop:hover .menuDropbtnDesktop {border: 1px solid black;
+    cursor: pointer;} 
+
+    .show {display:block;}
+  
+    .hide {display:none;}
+
+
+/* INDEX - DESKTOP */
+
+.indexContainer {background-color: rgb(0,11,62);
+width:100%;
+position:relative;
+z-index:-1;
+display: flex;
+justify-content: center;
+padding:0 0 130px 0;}
+
+
+.moonRocket {margin: 5px 0;}
+
+.indexBtnsContainer {position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+
+
+.indexBtnCandidate {background-color: black;
+  font-size: 30px;
+  color: white;
+  border:2px solid white;
+  padding:5px 20px 0px 20px;
+  min-width: 200px;
+  cursor: pointer;
+margin-right:60px;
+text-decoration: none}
+
+.indexBtnEmployer {background-color: black;
+  font-size: 30px;
+  color: white;
+  border:2px solid white;
+  padding:5px 20px 0px 20px;
+  min-width: 200px;
+  cursor: pointer;
+  margin-left:60px;
+text-decoration: none;}
+
+.indexBtnEmployer:hover {background-color: rgb(96,62,156);}
+
+.indexBtnCandidate:hover {background-color: rgb(96,62,156);}
+
+.aboutContainer {background-color: rgb(16,89,139);
+  width:100%;
+  display: flex;
+  justify-content: center;
+position: relative;}
+
+.aboutTextContainer {position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  color:white;
+  font-size: 30px;
+  text-align: justify;
+  width:700px;
+}
+
+.mapImg {width:50%}
+
+.contactContainer {display:flex;
+align-items: center;
+background-color: rgb(0, 11, 62);}
+
+.contactTextContainer {color:white;
+font-size: 25px;
+margin-left: 3em;
+}
+
+.contactHeader {font-size:40px;}
+
+
+/* EMPLOYERS - DESKTOP */
+
+.employersContainer {background-color: rgb(0,11,62);
+  width:100%;
+  display: flex;
+  justify-content: center;
+position: relative;}
+
+.employersText {color:white;
+font-size: 30px;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  text-align: justify;
+  width:900px;
+line-height: 55px;}
+
+
+.contactContainerEmployers {display:flex;
+  align-items: center;
+  background-color: rgb(16,89,139);}
+
+.employersBackgroundImgMob {display: none;}
+
+/* CANDIDATES - DESKTOP */
+
+.candidatesContainer {background-color: rgb(0,11,62);
+  width:100%;
+  display: flex;
+  justify-content: center;
+position: relative;}
+
+.candidatesText {color:white;
+font-size: 30px;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  text-align: justify;
+  width:900px;
+line-height: 55px;}
+
+
+.contactContainerEmployers {display:flex;
+  align-items: center;
+  background-color: rgb(16,89,139);}
+
+.candidatesBackgroundImgMob {display: none;}
+
+/* CURRENT JOBS - DESKTOP */
+
+.currentJobsContainer {background-image: url(currentJobs/currentJobsBackground.png);
+background-repeat: repeat;
+display: flex;
+justify-content: center;}
+
+.currentJobsText {width:1000px;}
+
+.currentJobsHeader {font-size:40px;
+text-align: left;
+color:white;}
+
+.jobListing {color:white;
+font-size: 25px;
+line-height: 40px;
+margin:80px 0;
+text-align: justify;}
+
+.jobListingTitle {display:flex;
+margin-bottom: 20px;}
+
+.jobSubtitle {margin-right: 10px;
+color:rgb(199,174,243)}
+
+.jobSubSubtitle {margin-right: 30px;}
+
+.jobSubtitleGroup {display: flex;}
+
+
+@media only screen and (min-width: 501px) and (max-width: 800px) { 
+
+  
+
+    /* HEADER - IPAD */
+
+  .headerIpad {display:flex;}
+
+  .headerDesktop {display:none;}
+
+  .headerBlock {flex-direction: column;
+  align-items: baseline;
+height:250px;}
+
+  .titleLink {cursor: pointer;
+    width:95%;
+  margin-top:30px;}
+
+    .rocketTitle {
+    margin-left:20px;
+    width:100%;
+    padding-top: 5px;}
+    
+.ipadHeaderLayout {width:100%;
+  display: flex;
+justify-content: space-between;
+margin:20px 0;}
+
+    .headerContact {width:100%;
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-right: 0px;
+    margin-left:20px}
+    
+    .headerSocial {width:50%;
+    display: flex;
+    margin-right: 20px;}
+    
+    .socialIcon {width:65px;
+    height:65px;
+    margin:10px;
+    text-align: right;
+    cursor:pointer;}
+
+
+  /* FOOTER - IPAD */
+
+  footer {font-size: 20px;}
+
+    /* INDEX - IPAD */
+
+    .moonRocket {width:752px;}
+
+.indexContainer {padding-top: 130px;}
+
+.indexBtnsContainer {display: flex;
+flex-direction: column;
+top:50%;}
+
+    .indexBtnCandidate {
+      margin-bottom:40px;
+    margin-right:0px;}
+    
+    .indexBtnEmployer {
+      margin-top:40px;
+      margin-left:0px;}
+
+
+    /* ABOUT - IPAD */
+
+.aboutTextContainer {width:500px;
+font-size: 25px;}
+
+
+
+    /* CONTACT - IPAD */
+
+.contactContainer {flex-direction: column;}
+
+.mapImg {width: 100%;}
+
+
+
+
+
+/* EMPLOYERS - IPAD */
+
+.employersText {width:500px;
+font-size: 20px;
+line-height: 40px;}
+
+
+.contactContainerEmployers {flex-direction: column;}
+
+
+.employersBackgroundImgMob {display: none;}
+
+
+/* EMPLOYERS - IPAD */
+
+.candidatesText {width:500px;
+  font-size: 20px;
+  line-height: 40px;}
+  
+  
+  .contactContainerEmployers {flex-direction: column;}
+  
+  
+  .candidatesBackgroundImgMob {display: none;}
+
+
+/* CURRENT JOBS - IPAD */
+
+.currentJobsContainer {background-image: url(currentJobs/currentJobsBackgroundIpad.png);
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;}
+  
+  .currentJobsText {width:600px;}
+  
+  .currentJobsHeader {font-size:40px;
+  text-align: left;
+  color:white;}
+  
+  .jobListing {color:white;
+  font-size: 20px;
+  line-height: 35px;
+  margin:80px 0;
+  text-align: justify;}
+  
+  .jobListingTitle {
+    flex-direction: column;
+  margin-bottom: 20px;}
+  
+  .jobSubtitle {margin-right: 10px;
+  color:rgb(199,174,243)}
+  
+  .jobSubSubtitle {margin-right: 30px;}
+
+  .jobSubtitleGroup {display: flex;
+  flex-direction: row;}
+
+
+
+
+}
+   
+
+@media only screen and (max-width: 500px) {
+
+  .headerBlock {flex-direction: column;
+    height:210px;}
+
+  .titleLink {cursor: pointer;
+    width:95%;
+  margin-top:30px;}
+
+    .rocketTitle {
+    margin-left:0px;
+    margin-bottom: 30px;
+    width:100%;
+    padding-top: 5px;}
+    
+
+    .headerContact {display: none;}
+    
+    .headerSocial {width:50%;
+    display: flex;
+    margin-right: 0px;
+  }
+
+
+  /* INDEX - MOBILE */
+
+  .moonRocket {width:100%;}
+
+  .indexContainer {padding-top: 130px;}
+
+.indexBtnsContainer {display: flex;
+flex-direction: column;
+top:50%;}
+
+    .indexBtnCandidate {
+      margin-bottom:40px;
+    margin-right:0px;
+  min-width: 150px;
+font-size: 25px;
+padding: 5px 10px 0 10px;}
+    
+    .indexBtnEmployer {
+      margin-top:40px;
+      margin-left:0px;
+      min-width: 150px;    
+font-size: 25px;
+
+padding: 5px 7px 0 7px;}
+
+
+  /* ABOUT - MOBILE */
+
+
+  .aboutContainer {padding-top: 200px;}
+
+  .aboutTextContainer {width: 330px;
+  font-size: 20px;}
+
+
+  
+  /* CONTACT - MOBILE */
+
+  .contactContainer {flex-direction: column;}
+
+  .mapImg {width:100%}
+
+  .contactTextContainer {margin-left: 10px;
+  font-size: 20px;}
+
+  .contactHeader {font-size: 30px;}
+
+
+
+  
+/* EMPLOYERS - MOBILE */
+
+
+.employersText {width:330px;
+font-size: 20px;
+line-height: 30px;}
+
+
+.contactContainerEmployers {flex-direction: column;}
+
+.employersBackgroundImgMob {display: block;}
+
+.employersBackgroundImg {display: none;}
+
+.emailLine {text-align: left;}
+
+/* CANDIDATES - MOBILE */
+
+
+.candidatesText {width:330px;
+  font-size: 20px;
+  line-height: 30px;}
+  
+  
+  .contactContainerEmployers {flex-direction: column;}
+  
+  .candidatesBackgroundImgMob {display: block;}
+  
+  .candidatesBackgroundImg {display: none;}
+  
+  .emailLine {text-align: left;}
+
+
+
+/* CURRENT JOBS - MOBILE */
+
+.currentJobsContainer {background-image: none;
+  background-color: rgb(0,11,62);
+  }
+  
+  .currentJobsText {width:310px;}
+  
+  .currentJobsHeader {font-size:30px;
+margin-top:90px;}
+  
+  .jobListing {
+  font-size: 19px;
+  line-height: 30px;
+  margin:60px 0;
+  text-align: justify;}
+  
+  .jobListingTitle {
+    flex-direction: column;
+  }
+
+  .jobSubtitleGroup {display: flex;
+  flex-direction: row;}
+
+
+}
