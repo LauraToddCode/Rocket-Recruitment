@@ -3,176 +3,135 @@
 
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<Title>Rocket Recruitment</title>
+    <Title>Rocket Recruitment</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  </head>
+  <body>
 
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
-
-    </style> 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script>
-  
-
-    function myMenuDropdown() {
-document.getElementById("menuDropbtnDesktop").classList.toggle("show");
-}
-
-</script>
-
-
-<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-
-</head>
-<body>
-
-  <div class="headerDesktop">
-  <div class="headerBlock">
-    <a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
-    
-    <div class="headerContact">contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</div>
-    <div class="headerSocial">
-    <a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
-    
-    <a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
-    
-    <a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
-  
-    </div>
+    <div class="headerDesktop">
+      <div class="headerBlock">
+        <a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
+        <div class="headerContact">contact@rocketrecruitment.com
+          <br>19 Swan Lane, Guildford, Surrey, GU1 4EQ
+          <br>01365 898 420
+        </div>
+        <div class="headerSocial">
+          <a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
+          <a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
+          <a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
+        </div>
+      </div>
     </div>
 
-  </div>
 
-
-  <div class="headerIpad">
-<div class="headerBlock">
-<a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
-
-<div class="ipadHeaderLayout">
-<div class="headerContact">contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</div>
-<div class="headerSocial">
-<a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
-
-<a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
-
-<a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
-</div>
-</div>
-</div>
-</div>
+    <div class="headerIpad">
+      <div class="headerBlock">
+        <a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
+        <div class="ipadHeaderLayout">
+          <div class="headerContact">contact@rocketrecruitment.com
+            <br>19 Swan Lane, Guildford, Surrey, GU1 4EQ
+            <br>01365 898 420
+          </div>
+          <div class="headerSocial">
+            <a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
+            <a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
+            <a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div onclick="myMenuDropdown()" class="menuDropbtnDesktop">Menu<img class="menuIcon" src="menu/menuIcon.png"></div>
-    <div class="menuDropdown-contentDesktop" id="menuDropbtnDesktop">
-      
 
+    <div class="menuDropdown-contentDesktop" id="menuDropbtnDesktop">
       <ul class="navList" id="navList"> 
-     
         <a href="index.html"><li>Home</li></a>
         <a href="candidates.html"><li>Candidates</li></a>
         <a href="employers.html"><li>Employers</li></a>
         <a href="currentJobs.html"><li>Current Jobs</li></a>
-
       </ul>
     </div>
 
 
 
-    <script>
+
+    <div class="currentJobsContainer">
+
+      <div class="currentJobsText">
+
+        <div class="currentJobsHeader">Current Jobs</div>
+
+        <div class="jobListing">
+          <div class="jobListingTitle">
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Digital Marketing Manager</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">London</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£30,000 - £35,000</div></div>
+          </div>
+          <p class="jobDescription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
+          </p>
+        </div>
 
 
-      $( "div.menuDropbtnDesktop" ).click(function() { var x = document.getElementById("navList");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-        $( "ul" ).slideToggle( "slow" );
-      });
-      
-</script>    
+        <div class="jobListing">
+          <div class="jobListingTitle">
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Software Engineer</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">Basingstoke</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£40,000 - £50,000</div></div>
+          </div>
+          <p class="jobDescription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
+          </p>
+        </div>
 
 
-  <div class="currentJobsContainer">
-
-<div class="currentJobsText">
-
-<div class="currentJobsHeader">Current Jobs</div>
-
-<div class="jobListing">
-<div class="jobListingTitle">
-  <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Digital Marketing Manager</div></div>
-  <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">London</div></div>
-  <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£30,000 - £35,000</div></div>
-</div>
-<div class="jobDescription">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
-</div>
-</div>
+        <div class="jobListing">
+          <div class="jobListingTitle">
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Office Manager</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">Hounslow</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£25,000 - £28,000</div></div>
+          </div>
+          <p class="jobDescription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
+          </p>
+        </div>
 
 
-<div class="jobListing">
-  <div class="jobListingTitle">
-    <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Software Engineer</div></div>
-    <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">Basingstoke</div></div>
-    <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£40,000 - £50,000</div></div>
-  </div>
-  <div class="jobDescription">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
-  </div>
-  </div>
+        <div class="jobListing">
+          <div class="jobListingTitle">
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Product Designer</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">Reading</div></div>
+            <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£30,000 - £32,000</div></div>
+          </div>
+          <p class="jobDescription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
+          </p>
+        </div>
 
-
-  <div class="jobListing">
-    <div class="jobListingTitle">
-      <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Office Manager</div></div>
-      <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">Hounslow</div></div>
-      <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£25,000 - £28,000</div></div>
-    </div>
-    <div class="jobDescription">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
-    </div>
-    </div>
-
-
-    <div class="jobListing">
-      <div class="jobListingTitle">
-        <div class="jobSubtitleGroup"><div class="jobSubtitle">Job:</div><div class="jobSubSubtitle">Product Designer</div></div>
-        <div class="jobSubtitleGroup"><div class="jobSubtitle">Location:</div><div class="jobSubSubtitle">Reading</div></div>
-        <div class="jobSubtitleGroup"><div class="jobSubtitle">Salary:</div><div class="jobSubSubtitle">£30,000 - £32,000</div></div>
       </div>
-      <div class="jobDescription">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.
-      </div>
-      </div>
-
-</div>
-  </div>
-
-
-
-  <div class="contactContainerEmployers">
-
-    <img alt="map" src="index/map.png" class="mapImg">
-    <div class="contactTextContainer"><div class="contactHeader">Call or email us to make an appointment...</div>
-    <p>contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</p> 
     </div>
-</div>
-
-
-</div>
 
 
 
-<footer>
+    <div class="contactContainerEmployers">
+      <img alt="map" src="index/map.png" class="mapImg">
+      <div class="contactTextContainer">
+        <div class="contactHeader">Call or email us to make an appointment...</div>
+        <p>contact@rocketrecruitment.com
+          <br>19 Swan Lane, Guildford, Surrey, GU1 4EQ
+          <br>01365 898 420
+        </p> 
+      </div>
+    </div>
 
-&copy Copyright 2020 Rocket Recruitment</footer>
+  <footer>&copy Copyright 2020 Rocket Recruitment</footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 
-</body>
+  </body>
 </html>
