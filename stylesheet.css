@@ -94,17 +94,17 @@ footer {
  .menuDropbtnDesktop {
     background-color: black;
     color: white;
-    text-align:right;
+    text-align: right;
     border: 2px solid white;
     border-top: 0px;
     font-size: 30px;
     padding: 0 10px;
     height: 60px;
     position: absolute;
-    right:8px;
-    z-index:1;
-    cursor:pointer;
-    width:200px;
+    right: 8px;
+    z-index: 1;
+    cursor: pointer;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -128,7 +128,7 @@ footer {
   background-color:rgb(199,174,243);
   min-width: 139.53px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 10;
   width:223px;
 }
 
@@ -165,53 +165,55 @@ footer {
 .indexContainer {
   background-color: rgb(0,11,62);
   width:100%;
-  position:relative;
-  z-index:-1;
   display: flex;
   justify-content: center;
   padding:0 0 130px 0;
 }
 
+.rocketImgContainer {
+  position: relative;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+
 .moonRocket {
   margin: 5px 0;
+  width: 90%;
 }
 
 .indexBtnsContainer {
   position: absolute;
-  top: 40%;
+  z-index: 5;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
 }
 
-.indexBtnCandidate {
+.indexBtn {
   background-color: black;
-  font-size: 30px;
+  font-size: 1.75em;
   color: white;
   border:2px solid white;
   padding:5px 20px 0px 20px;
   min-width: 200px;
   cursor: pointer;
-  margin-right:60px;
-  text-decoration: none
-}
-
-.indexBtnEmployer {
-  background-color: black;
-  font-size: 30px;
-  color: white;
-  border:2px solid white;
-  padding:5px 20px 0px 20px;
-  min-width: 200px;
-  cursor: pointer;
-  margin-left:60px;
   text-decoration: none;
+  display: flex;
+  place-content: center;
+  place-items: center;
 }
 
-.indexBtnEmployer:hover {
-  background-color: rgb(96,62,156);
+.candidateBtn {
+  margin-right:60px;
 }
 
-.indexBtnCandidate:hover {
+.employerBtn {
+  margin-left:60px;
+}
+
+.indexBtn:hover {
   background-color: rgb(96,62,156);
 }
 
@@ -232,6 +234,10 @@ footer {
   font-size: 30px;
   text-align: justify;
   width:700px;
+}
+
+.earthRocket {
+  width: 90%;
 }
 
 .mapImg {
@@ -267,7 +273,7 @@ footer {
 
 .employersText {
   color:white;
-  font-size: 30px;
+  font-size: 1.75em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -282,6 +288,10 @@ footer {
   display:flex;
   align-items: center;
   background-color: rgb(16,89,139);
+}
+
+.employersBackgroundImg {
+  width: 80%;
 }
 
 .employersBackgroundImgMob {
@@ -300,7 +310,7 @@ footer {
 
 .candidatesText {
   color:white;
-  font-size: 30px;
+  font-size: 1.75em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -310,11 +320,8 @@ footer {
   line-height: 55px;
 }
 
-
-.contactContainerEmployers {
-  display:flex;
-  align-items: center;
-  background-color: rgb(16,89,139);
+.candidatesBackgroundImg {
+  width: 80%;
 }
 
 .candidatesBackgroundImgMob {
@@ -325,7 +332,6 @@ footer {
 
 .currentJobsContainer {
   background-image: url(currentJobs/currentJobsBackground.png);
-  background-repeat: repeat;
   display: flex;
   justify-content: center;
 }
@@ -367,7 +373,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 501px) and (max-width: 800px) { 
+@media only screen and (max-width: 1050px) { 
 
     /* HEADER - IPAD */
 
@@ -436,10 +442,6 @@ footer {
 
   /* INDEX - IPAD */
 
-  .moonRocket {
-    width:752px;
-  }
-
   .indexContainer {
     padding-top: 130px;
   }
@@ -447,15 +449,14 @@ footer {
   .indexBtnsContainer {
     display: flex;
     flex-direction: column;
-    top:50%;
   }
 
-  .indexBtnCandidate {
+  .candidateBtn {
     margin-bottom:40px;
     margin-right:0px;
   }
   
-  .indexBtnEmployer {
+  .employerBtn {
     margin-top:40px;
     margin-left:0px;
   }
@@ -488,39 +489,42 @@ footer {
     line-height: 40px;
   }
 
-  .contactContainerEmployers {
-    flex-direction: column;
+  .employersContainer {
+    height: calc(100vh - 200px)
   }
 
-  .employersBackgroundImgMob {
-    display: none;
+  .employersBackgroundImg {
+    width: 100%;
+    height: max-content;
+  }
+
+  .contactContainerEmployers {
+    flex-direction: column;
   }
 
 
   /* EMPLOYERS - IPAD */
+  .emailLine {
+    text-align: left;
+  }
+
+  .candidatesContainer {
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+  }
 
   .candidatesText {
     width:500px;
-    font-size: 20px;
     line-height: 40px;
   }
   
-  .contactContainerEmployers {
-    flex-direction: column;
-  }
-  
-  .candidatesBackgroundImgMob {
-    display: none;
-  }
 
 
   /* CURRENT JOBS - IPAD */
 
   .currentJobsContainer {
     background-image: url(currentJobs/currentJobsBackgroundIpad.png);
-    background-repeat: repeat;
-    display: flex;
-    justify-content: center;
   }
   
   .currentJobsText {
@@ -563,34 +567,30 @@ footer {
 }
    
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
   .headerBlock {
-    flex-direction: column;
-    height:210px;
-  }
-
-  .titleLink {
-    cursor: pointer;
-    width:95%;
-    margin-top:30px;
+    align-items: center;
+    height: auto;
   }
 
   .rocketTitle {
     margin-left:0px;
     margin-bottom: 30px;
-    width:100%;
-    padding-top: 5px;
   }
   
+  .ipadHeaderLayout {
+    margin-top: 0;
+  }
+
   .headerContact {
     display: none;
   }
   
   .headerSocial {
-    width:50%;
+    width:100%;
     display: flex;
-    margin-right: 0px;
+    margin: 0;
   }
 
 
@@ -601,52 +601,49 @@ footer {
   }
 
   .indexContainer {
-    padding-top: 130px;
+    padding-top: 80px;
+    padding-bottom: 0;
+    min-height: calc(100vh - 50px);
   }
 
   .indexBtnsContainer {
     display: flex;
     flex-direction: column;
-    top:50%;
+  }
+
+  .indexBtn {
+    min-width: 125px;
+    font-size: 1.25em;
   }
 
   .indexBtnCandidate {
     margin-bottom:40px;
     margin-right:0px;
-    min-width: 150px;
-    font-size: 25px;
-    padding: 5px 10px 0 10px;
   }
   
   .indexBtnEmployer {
     margin-top:40px;
     margin-left:0px;
-    min-width: 150px;    
-    font-size: 25px;
-    padding: 5px 7px 0 7px;
   }
 
 
   /* ABOUT - MOBILE */
 
   .aboutContainer {
-    padding-top: 200px;
+    min-height: calc(100vh - 50px);
   }
 
   .aboutTextContainer {
     width: 330px;
     font-size: 20px;
   }
+
+  .earthRocket {
+    height: max-content;
+    align-self: flex-end;
+  }
   
   /* CONTACT - MOBILE */
-
-  .contactContainer {
-    flex-direction: column;
-  }
-
-  .mapImg {
-    width:100%
-  }
 
   .contactTextContainer {
     margin-left: 10px;
@@ -665,12 +662,9 @@ footer {
     line-height: 30px;
   }
 
-  .contactContainerEmployers {
-    flex-direction: column;
-  }
-
   .employersBackgroundImgMob {
     display: block;
+    width: 100%;
   }
 
   .employersBackgroundImg {
@@ -683,27 +677,23 @@ footer {
 
   /* CANDIDATES - MOBILE */
 
+  .candidatesContainer {
+    height: auto;
+  }
 
   .candidatesText {
-    width:330px;
-    font-size: 20px;
+    width: 90%;
+    font-size: 1.25em;
     line-height: 30px;
-  }
-  
-  .contactContainerEmployers {
-    flex-direction: column;
   }
   
   .candidatesBackgroundImgMob {
     display: block;
+    width: 90%;
   }
   
   .candidatesBackgroundImg {
     display: none;
-  }
-  
-  .emailLine {
-    text-align: left;
   }
 
   /* CURRENT JOBS - MOBILE */
