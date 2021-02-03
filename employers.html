@@ -3,132 +3,82 @@
 
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<Title>Rocket Recruitment</title>
+    <Title>Rocket Recruitment</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+  </head>
+  <body>
 
-
-    </style> 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<script>
-  
-
-    function myMenuDropdown() {
-document.getElementById("menuDropbtnDesktop").classList.toggle("show");
-}
-
-</script>
-
-
-<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-
-</head>
-<body>
-
-  <div class="headerDesktop">
-  <div class="headerBlock">
-    <a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
-    
-    <div class="headerContact">contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</div>
-    <div class="headerSocial">
-    <a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
-    
-    <a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
-    
-    <a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
-  
-    </div>
+    <div class="headerDesktop">
+      <div class="headerBlock">
+        <a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
+        <div class="headerContact">contact@rocketrecruitment.com
+          <br>19 Swan Lane, Guildford, Surrey, GU1 4EQ
+          <br>01365 898 420
+        </div>
+        <div class="headerSocial">
+          <a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
+          <a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
+          <a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
+        </div>
+      </div>
     </div>
 
-  </div>
 
-
-  <div class="headerIpad">
-<div class="headerBlock">
-<a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
-
-<div class="ipadHeaderLayout">
-<div class="headerContact">contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</div>
-<div class="headerSocial">
-<a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
-
-<a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
-
-<a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
-</div>
-</div>
-</div>
-</div>
+    <div class="headerIpad">
+      <div class="headerBlock">
+        <a href="index.html" class="titleLink"><img class="rocketTitle" src="header/rocketTitleImg.png" alt="Rocket Recruitment Logo"></a>
+        <div class="ipadHeaderLayout">
+          <div class="headerContact">contact@rocketrecruitment.com
+            <br>19 Swan Lane, Guildford, Surrey, GU1 4EQ
+            <br>01365 898 420
+          </div>
+          <div class="headerSocial">
+            <a href="https://www.instagram.com"><img class="socialIcon" alt="instagram link" src="socialIcons/insta.png"></a>
+            <a href="https://www.facebook.com"><img class="socialIcon" alt="facebook link" src="socialIcons/facebook.png"></a>
+            <a href="https://www.twitter.com"><img class="socialIcon" alt="twitter link" src="socialIcons/twitter.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <div onclick="myMenuDropdown()" class="menuDropbtnDesktop">Menu<img class="menuIcon" src="menu/menuIcon.png"></div>
     <div class="menuDropdown-contentDesktop" id="menuDropbtnDesktop">
-      
-
       <ul class="navList" id="navList"> 
-     
         <a href="index.html"><li>Home</li></a>
         <a href="candidates.html"><li>Candidates</li></a>
         <a href="employers.html"><li>Employers</li></a>
         <a href="currentJobs.html"><li>Current Jobs</li></a>
-
       </ul>
     </div>
 
-
-
-    <script>
-
-
-      $( "div.menuDropbtnDesktop" ).click(function() { var x = document.getElementById("navList");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-        $( "ul" ).slideToggle( "slow" );
-      });
-      
-</script>    
-
-
-  <div class="employersContainer">
-
-<img src="employers/employersBackground.png" alt="moon landing" class="employersBackgroundImg">
-
-<img src="employers/employersBgrndMob.png" alt="moon landing" class="employersBackgroundImgMob">
-
-<div  class="employersText"> 
-    <p>Our aim is to ensure that our employers and candidates find the perfect match so we believe in top notch communication to make sure we put the right person in the right job. If you're looking to fill a position in your company, send us a brief to get the ball rolling and we'll be in touch to discuss things further.</p>
-    <p class="emailLine">
-    Email us at employers@rocketrecruitment.com
-    </p>
-  </div>
-  </div>
-
-  <div class="contactContainerEmployers">
-
-    <img alt="map" src="index/map.png" class="mapImg">
-    <div class="contactTextContainer"><div class="contactHeader">Call or email us to make an appointment...</div>
-    <p>contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</p> 
+    <div class="employersContainer">
+      <img src="employers/employersBackground.png" alt="moon landing" class="employersBackgroundImg">
+      <img src="employers/employersBgrndMob.png" alt="moon landing" class="employersBackgroundImgMob">
+      <div  class="employersText"> 
+        <p>Our aim is to ensure that our employers and candidates find the perfect match so we believe in top notch communication to make sure we put the right person in the right job. If you're looking to fill a position in your company, send us a brief to get the ball rolling and we'll be in touch to discuss things further.</p>
+        <p class="emailLine">
+        Email us at employers@rocketrecruitment.com
+        </p>
+      </div>
     </div>
-</div>
 
+    <div class="contactContainerEmployers">
+      <img alt="map" src="index/map.png" class="mapImg" />
+      <div class="contactTextContainer">
+        <div class="contactHeader">Call or email us to make an appointment...</div>
+        <p>contact@rocketrecruitment.com<br>19 Swan Lane, Guildford, Surrey, GU1 4EQ<br>01365 898 420</p> 
+      </div>
+    </div>
 
-</div>
+  <footer>&copy Copyright 2020 Rocket Recruitment</footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 
-
-
-<footer>
-
-&copy Copyright 2020 Rocket Recruitment</footer>
-
-
-</body>
+  </body>
 </html>
